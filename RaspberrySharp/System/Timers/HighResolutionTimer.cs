@@ -153,9 +153,7 @@ namespace RaspberrySharp.System.Timers
             {
                 if (thread == null)
                     return;
-
-                if (thread != Thread.CurrentThread)
-                    thread.Abort();
+                
                 thread = null;
             }
         }
